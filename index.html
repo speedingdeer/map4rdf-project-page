@@ -1,7 +1,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 <script type="text/javascript">
 
   var _gaq = _gaq || [];
@@ -13,6 +13,14 @@
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
+
+  $(window).load(function () {
+	$(".div_header").click(function(){
+		var divId = $(this).attr('id');
+		$('#' + divId + "_content").toggle('slow');
+		return false;
+	});
+  });
 
 </script>
 <link rel="SHORTCUT ICON" href="http://mccarthy.dia.fi.upm.es/map4rdf/img/map4rdfLogo.ico">
@@ -30,7 +38,9 @@ h3 { font: 120% sans-serif; margin: 1.5em 0 -0.5em 0; }
 h4 { font: bold 100% sans-serif; }
 h5 { font: italic 100% sans-serif; }
 h6 { font: small-caps 100% sans-serif; }
+.div_header { cursor: pointer; cursor: hand; background-color: #DEE8EF;}
 .hide { display: none; }
+.rolldiv { display:none; border-color: #DEE8EF; border: medium; border-width: medium; border: medium;}
 pre { background: #fff6bb; font-family: monospace; line-height: 1.2em; padding: 1em 2em; }
 dt { font-weight: bold; margin-top: 0; margin-bottom: 0; }
 dd { margin-top: 0; margin-bottom: 0; }
@@ -83,29 +93,32 @@ pre { speak-punctuation: code; }
 
 <p><strong>map4rdf</strong> is an open source software. Just configure it to use your SPARQL endpoint and provide your users with a nice map-based visualization of your data. The geospatial aspects of the data can be modelled using either the data model from <a href="http://www.w3.org/2005/Incubator/geo/">W3C Geo XG</a> or the geometrical data model proposed by <a href="http://geo.linkeddata.es/web/guest/modelos" >GeoLinkedData</a></p> 
 
-<div style="padding: 0 10em 0 10em;">
-<div id="download">
-  <h2><a href="http://code.google.com/p/map4rdf/downloads/list">Download map4rdf</a></h2>
-  <small>v0.0.2 (beta), released 2011-03-15</small>
-</div>
-<div id="demo">
-  <h2><a href="http://dbpedia.linkeddata.es/map4rdf">Visit the map4rdf demo</a></h2>
-  <small>Using <a href="http://dbpedia.org">dbpedia<a> endpoint</small>
-</div>
-<div style="clear: both;" ></div>
+<h2 id="download_boxes" class="div_header">Download</h2>
+<div id="download_boxes_content" class="rolldiv">
+	<div style="padding: 0 10em 0 10em;">
+	<div id="download">
+	  <h2><a href="http://code.google.com/p/map4rdf/downloads/list">Download map4rdf</a></h2>
+	  <small>v0.0.2 (beta), released 2011-03-15</small>
+	</div>
+	<div id="demo">
+	  <h2><a href="http://dbpedia.linkeddata.es/map4rdf">Visit the map4rdf demo</a></h2>
+	  <small>Using <a href="http://dbpedia.org">dbpedia<a> endpoint</small>
+	</div>
+	<div style="clear: both;" ></div>
+	</div>
 </div>
 
-<h2 id="news">News</h2>
-
-<ul>
-  <li><strong>2011-03-18:</strong> New <a href="http://mccarthy.dia.fi.upm.es/goodrelations">map4rdf demo</a> using <a href="http://linkeddata.uriburner.com/sparql">linkeddata.uriburner</a> endpoint for <a href="http://www.heppnetz.de/projects/goodrelations/"/>GoodRelations</a>. Thanks to Martin Hepp and Andreas Radinger.</li>
-  <li><strong>2011-03-15:</strong> Version <strong>0.0.2</strong> relased (beta version).</li>  
-  <li><strong>2011-03-11:</strong> The map4rdf team will be attending <a href="http://vocamp.org/wiki/GeoVoCampSouthampton2011" >GeoVoCamp 2011</a>.</li>  
-  <li><strong>2010-03-11:</strong> New <a href="http://webenemasuno.linkeddata.es/map4rdf/">map4rdf demo</a> using <a href="http://webenemasuno.linkeddata.es/sparql">Spanish Webn+1 Project</a> endpoint. Thanks to <a href="http://www.oeg-upm.net/index.php/phdstudents/28-dgarijo">Daniel Garijo</a>!</li>  
-  <li><strong>2010-03-11:</strong> New <a href="http://mccarthy.dia.fi.upm.es/soton/">map4rdf demo</a> using <a href="http://sparql.data.southampton.ac.uk/">data.southampton</a> endpoint. Thanks to Christopher Gutteridge!</li>  
-  <li><strong>2010-03-11:</strong> Version <strong>0.0.1</strong> released. First beta version.</li>  
-</ul>
-
+<h2 id="news" class="div_header">News</h2>
+<div id="news_content" class="rolldiv">
+	<ul>
+	  <li><strong>2011-03-18:</strong> New <a href="http://mccarthy.dia.fi.upm.es/goodrelations">map4rdf demo</a> using <a href="http://linkeddata.uriburner.com/sparql">linkeddata.uriburner</a> endpoint for <a href="http://www.heppnetz.de/projects/goodrelations/"/>GoodRelations</a>. Thanks to Martin Hepp and Andreas Radinger.</li>
+	  <li><strong>2011-03-15:</strong> Version <strong>0.0.2</strong> relased (beta version).</li>  
+	  <li><strong>2011-03-11:</strong> The map4rdf team will be attending <a href="http://vocamp.org/wiki/GeoVoCampSouthampton2011" >GeoVoCamp 2011</a>.</li>  
+	  <li><strong>2010-03-11:</strong> New <a href="http://webenemasuno.linkeddata.es/map4rdf/">map4rdf demo</a> using <a href="http://webenemasuno.linkeddata.es/sparql">Spanish Webn+1 Project</a> endpoint. Thanks to <a href="http://www.oeg-upm.net/index.php/phdstudents/28-dgarijo">Daniel Garijo</a>!</li>  
+	  <li><strong>2010-03-11:</strong> New <a href="http://mccarthy.dia.fi.upm.es/soton/">map4rdf demo</a> using <a href="http://sparql.data.southampton.ac.uk/">data.southampton</a> endpoint. Thanks to Christopher Gutteridge!</li>  
+	  <li><strong>2010-03-11:</strong> Version <strong>0.0.1</strong> released. First beta version.</li>  
+	</ul>
+</div>
 <!--
 <h2 id="contents">Contents</h2>
 <ol class="toc">
@@ -118,17 +131,18 @@ pre { speak-punctuation: code; }
 </ol>
 -->
 
-<h2 id="about">About map4rdf</h2>
+<h2 id="about" class="div_header">About map4rdf</h2>
+<div id="about_content" class="rolldiv">
 <ul>
 	<li>Faceted browser interface</li>
 	<li>Geospatial and geometrical visualization using Google Maps</li>
 	<li>Visualization of geometries (LineStrings, Polygons, etc) when using the <a href="http://geo.linkeddata.es/web/guest/modelos" >GeoLinkedData data model</a>.<strong> Example: </strong><a href="http://geo.linkeddata.es/browser/?uri=http://geo.linkeddata.es/resource/R%C3%ADo/R%C3%ADo%20Albarellos#dashboard">Albarellos River</a></li>
 	<li>Visualization of statistical data using <a href="http://sw.joanneum.at/scovo/schema.html">SCOVO</a></li>
 </ul>
+</div>
 
-
-<h2 id="quickstart">Quick start</h2>
-
+<h2 id="quickstart" class="div_header">Quick start</h2>
+<div id="quickstart_content" class="rolldiv">
 <p>You need:</p>
 <ul>
   <li>A <strong>servlet container</strong> such as <a href="http://tomcat.apache.org">Tomcat</a></li>
@@ -140,10 +154,10 @@ pre { speak-punctuation: code; }
     WAR file</strong> to your servlet container.</p></li>
   <li><p><strong>Modify the configuration files</strong> to suit your needs. </p></li>
 </ol>
-
-<h2 id="configurationfile">Working with the configuration files</h2>
-<p>The general configuration parameters of <strong>map4rdf</strong> are defined within the <strong>configuration.properties</strong> file. The configuration of the faceted browser is defined by the <strong>facets.ttl</strong> file. </p>
-
+</div>
+<h2 id="configurationfile" class="div_header">Working with the configuration files</h2>
+<div id=configurationfile_content class="rolldiv">
+	<p>The general configuration parameters of <strong>map4rdf</strong> are defined within the <strong>configuration.properties</strong> file. The configuration of the faceted browser is defined by the <strong>facets.ttl</strong> file. </p>
 <h3 id="conf">configuration.properties</h3>
 <p>This file is located within map4rdf's webapp directory, at <strong>/WEB-INF/configuration.properties</strong></p>
 
@@ -228,24 +242,28 @@ _:rdfTypeFacet
 .
 </pre>
 The example above manually defines two facets for the the FacetGroup. The facet <strong>Person</strong> and the facet <strong>University</strong>. When the facets are manually defined you want to turn off the automatic facet detection by setting  <strong>facets.automactic=false</strong> in the <a href="#conf">configuration</a> file.
+</div>
 
+<h2 id="support" class="div_header">Support and feedback</h2>
+<div id="support_content" class="rolldiv">
+	<p>You can contact the authors via email:<br>
+	  <a href="mailto:geotoolsupport%20at%20delicias.dia.fi.upm.es">GeoLinkedData Tool Support</a>
+	</p>
+</div>
 
-<h2><a name="support" id="support"></a>Support and feedback</h2>
-<p>You can contact the authors via email:<br>
-  <a href="mailto:geotoolsupport%20at%20delicias.dia.fi.upm.es">GeoLinkedData Tool Support</a>
-</p>
+<h2 id="development" class="div_header">License, source code and development</h2>
+<div id="development_content" class="rolldiv">
+	<ul>
+	<li>MIT Licensed</li>
+	<li>Source code available at the <a href="http://map4rdf.googlecode.com/">Google Code project site</a></li>
+	<li><a href="http://code.google.com/p/map4rdf/issues/list">Current issues<a></li>
+	</ul>
+</div>
 
-
-<h2 id="development">License, source code and development</h2>
-<ul>
-<li>MIT Licensed</li>
-<li>Source code available at the <a href="http://map4rdf.googlecode.com/">Google Code project site</a></li>
-<li><a href="http://code.google.com/p/map4rdf/issues/list">Current issues<a></li>
-</ul>
-
-<h2 id="development">Related publication</h2>
-<p>Alexander De León, Victor Saquicela, Luís M. Vilches, Boris Villazón-Terrazas, Freddy Priyatna,  Oscar Corcho.<a href="http://portal.acm.org/citation.cfm?id=1839707.1839753">Geographical linked data: a Spanish use case.</a> In Proceedings of the 6th International Conference on Semantic Systems, 2010</p> 
-
+<h2 id="publication" class="div_header">Related publication</h2>
+<div id="publication_content" class="rolldiv">
+	<p>Alexander De León, Victor Saquicela, Luís M. Vilches, Boris Villazón-Terrazas, Freddy Priyatna,  Oscar Corcho.<a href="http://portal.acm.org/citation.cfm?id=1839707.1839753">Geographical linked data: a Spanish use case.</a> In Proceedings of the 6th International Conference on Semantic Systems, 2010</p> 
+</div>
 
 </div>
 
