@@ -1,0 +1,88 @@
+body {
+	text-align: center;
+	font-family: sans-serif;
+}
+
+#main-container {
+	width:1000px;
+	margin:0px auto;
+	text-align:left;
+}
+
+.board {		
+	border:1px solid #333;
+	
+	background-color:#F1F2F5  ;
+	margin-bottom: 10px;
+	padding-left: 5px;
+	padding-left: 5px;
+}
+
+#header {
+	padding:0px;
+}
+
+#footer {
+	margin-top:10px;
+	padding-right: 6px;
+	padding-top: 2px;
+	font-size: 12px;
+}
+
+#bookmarks {
+	margin: 0;
+	padding: 0;	
+	font-size: 19px;
+}
+.bookmark {
+	width: 243px;
+	display: block;
+	float: left;
+	margin-bottom: 0px;
+}
+
+/* dirty */
+
+#news {
+	border-right: none;
+	width: 244px;
+}
+
+#about {
+	border-right: none;
+	width: 244px;
+}
+
+#download {
+	border-right: none;
+	width: 244px;
+}
+
+/************/
+
+.bookmark:HOVER {
+	cursor: pointer;
+	background-color: #DEE9FC;
+}
+
+.marked-bookmark {
+	background-color: #FFFFFF;
+	border-bottom: none;
+}
+.marked-bookmark:HOVER {
+	cursor:default;
+	background-color: #FFFFFF;
+}
+#content {
+	clear: both;
+	border:1px solid #333;
+	border-top: none;
+	padding: 5px;
+	font-size: 14px;
+}
+
+
+.bookmark-content {
+	visibility: hidden;
+	display: none;
+}

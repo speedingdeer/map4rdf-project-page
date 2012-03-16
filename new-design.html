@@ -1,8 +1,84 @@
 <html>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<link rel="SHORTCUT ICON" href="http://mccarthy.dia.fi.upm.es/map4rdf/img/map4rdfLogo.ico">
+	<title>map4rdf &#8211; Maps viewer of RDF resources with Geometrical Information</title>
+	
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 	<script type="text/javascript" src="script.js"></script>
 	<link rel="stylesheet" href="style.css" type="text/css" />
+	
+	
 <body>
+	<div id="main-container">
+		
+		<div id="header" class="board">
+			<img src="img/header.png" alt="logo" >
+		</div>
+		
+		<div id=bookmarks>
+			<div id="about" class="bookmark board">
+				About
+			</div>
+			<div id="news" class="bookmark board">
+				News
+			</div>
+			<div id="download" class="bookmark board">
+				Download
+			</div>
+			<div id="cofiguration" class="bookmark board">
+				Configuration
+			</div>
+		</div>
+		<div id="content">
+			<!--
+				Bookmarks content 
+			 -->
+		</div>	
+		<div id="footer" class="board" >
+			<div id="footer-right" align="right">
+				<span class="footer-text">
+					Created by GeoLinkedData Team
+				</span> 
+				<a href="http://geo.linkeddata.es/web/guest">
+					<img src="img/oeg.png" alt="logo" width="50px" >
+				</a>
+			</div>
+		</div>
+	</div>
+	
+	
+	<!-- invisible -->
+	<div id="about_content" class="bookmark-content">
+		<p>
+			Recently we have seen a large increase in the amount of geospacial data that is being 
+			published using <a href="http://www.w3.org/RDF/">RDF</a> and 
+			<a href="http://www.w3.org/DesignIssues/LinkedData.html" >Linked Data principles</a>. 
+			Efforts such as the <a href="http://www.w3.org/2005/Incubator/geo/">W3C Geo XG</a>, 
+			and most recently the <a href="http://www.opengeospatial.org/projects/groups/geosparqlswg/" >
+			GeoSPARQL</a> initiative are providing the necessary vocabularies to publish this kind of 
+			information on the Web of Data. <strong>map4rdf</strong> is a mapping and faceted 
+			browsing tool for exploring and visualizing RDF datasets enhanced with 
+			geometrical Information.
+		</p>
+		<p>
+			<strong>map4rdf</strong> is an open source software. Just configure it to use your SPARQL 
+			endpoint and provide your users with a nice map-based visualization of your data. 
+			The geospatial aspects of the data can be modelled using either the data model from 
+			<a href="http://www.w3.org/2005/Incubator/geo/">W3C Geo XG</a> or the geometrical data model 
+			proposed by <a href="http://geo.linkeddata.es/web/guest/modelos" >GeoLinkedData</a>
+		</p> 
+	</div>
+	<div id="news_content" class="bookmark-content">
+		new content
+	</div>
+	<div id="download_content" class="bookmark-content">
+		download content
+	</div>
+	<div id="cofiguration_content" class="bookmark-content">
+		configuration content
+	</div>
+	<!-- end invisible  -->
+	
+	
 </body>
 </html>
