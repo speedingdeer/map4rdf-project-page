@@ -43,7 +43,7 @@ body {
 
 /* dirty */
 
-#news {
+#configuration {
 	border-right: none;
 	width: 244px;
 }
@@ -66,17 +66,14 @@ body {
 }
 
 .marked-bookmark {
-	background-color: #FFFFFF;
-	border-bottom: none;
+	background-color: #DEE9FC;
 }
 .marked-bookmark:HOVER {
 	cursor:default;
-	background-color: #FFFFFF;
 }
 #content {
 	clear: both;
-	border:1px solid #333;
-	border-top: none;
+	
 	padding: 5px;
 	font-size: 14px;
 }
