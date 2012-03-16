@@ -23,10 +23,11 @@ body {
 }
 
 #footer {
+	clear:both;
 	margin-top:10px;
-	padding-right: 6px;
-	padding-top: 2px;
+	padding-top: 10px;
 	font-size: 12px;
+	height: 45px;
 }
 
 #bookmarks {
@@ -73,13 +74,43 @@ body {
 }
 #content {
 	clear: both;
-	
 	padding: 5px;
 	font-size: 14px;
+	padding-bottom: 15px;
 }
 
 
 .bookmark-content {
 	visibility: hidden;
 	display: none;
+}
+
+li {
+	list-style-image: url("img/map4rdfLogoMin.png");
+}
+
+.float-div {
+	width: 490; 
+	float: left;
+}
+.small-wrapper {
+ 	clear: both;
+ 	padding-bottom: 15px;
+ 	padding-top: 10px;
+}
+.small-div {
+	float: left;
+	padding-left:10px;
+	height: 60px;
+}
+
+.small-div-text {
+	position: relative;
+	top: 20px;
+}
+
+.with-border {
+	border: solid;
+	border-width: 1px;
+	border-color: black;
 }

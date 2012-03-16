@@ -1,84 +1,259 @@
 <html>
-	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-	<link rel="SHORTCUT ICON" href="http://mccarthy.dia.fi.upm.es/map4rdf/img/map4rdfLogo.ico">
-	<title>map4rdf &#8211; Maps viewer of RDF resources with Geometrical Information</title>
-	
-	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
-	<script type="text/javascript" src="script.js"></script>
-	<link rel="stylesheet" href="style.css" type="text/css" />
-	
-	
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<link rel="SHORTCUT ICON"
+	href="http://mccarthy.dia.fi.upm.es/map4rdf/img/map4rdfLogo.ico">
+<title>map4rdf &#8211; Maps viewer of RDF resources with
+	Geometrical Information</title>
+
+<script type="text/javascript"
+	src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
+<link rel="stylesheet" href="style.css" type="text/css" />
+
+
 <body>
 	<div id="main-container">
-		
+
 		<div id="header" class="board">
-			<img src="img/header.png" alt="logo" >
+			<img src="img/header.png" alt="logo">
 		</div>
-		
+
 		<div id=bookmarks>
-			<div id="about" class="bookmark board">
-				About
-			</div>
-			<div id="download" class="bookmark board">
-				Download
-			</div>
-			<div id="cofiguration" class="bookmark board">
-				Configuration
-			</div>
-			<div id="news" class="bookmark board">
-				News
-			</div>
+			<div id="about" class="bookmark board">About</div>
+			<div id="download" class="bookmark board">Download</div>
+			<div id="cofiguration" class="bookmark board">Configuration</div>
+			<div id="faq" class="bookmark board" align="justify">Quick
+				Start & FAQ</div>
 		</div>
 		<div id="content">
 			<!--
 				Bookmarks content 
 			 -->
-		</div>	
-		<div id="footer" class="board" >
-			<div id="footer-right" align="right">
-				<span class="footer-text">
-					Created by GeoLinkedData Team
-				</span> 
-				<a href="http://geo.linkeddata.es/web/guest">
-					<img src="img/oeg.png" alt="logo" width="50px" >
+		</div>
+		<div id="footer" class="board">
+			<div id="footer-left" align="left" class="float-div">
+				You can contact the authors via email:<br> <a
+					href="mailto:geotoolsupport%20at%20delicias.dia.fi.upm.es">GeoLinkedData
+					Tool Support</a>
+			</div>
+			<div id="footer-right" align="right" class="float-div">
+				<span class="footer-text"> Created by GeoLinkedData Team </span> <a
+					href="http://geo.linkeddata.es/web/guest"> <img
+					src="img/oeg.png" alt="logo" width="50px">
 				</a>
 			</div>
 		</div>
 	</div>
-	
-	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	<!-- invisible -->
 	<div id="about_content" class="bookmark-content">
 		<p>
-			Recently we have seen a large increase in the amount of geospacial data that is being 
-			published using <a href="http://www.w3.org/RDF/">RDF</a> and 
-			<a href="http://www.w3.org/DesignIssues/LinkedData.html" >Linked Data principles</a>. 
-			Efforts such as the <a href="http://www.w3.org/2005/Incubator/geo/">W3C Geo XG</a>, 
-			and most recently the <a href="http://www.opengeospatial.org/projects/groups/geosparqlswg/" >
-			GeoSPARQL</a> initiative are providing the necessary vocabularies to publish this kind of 
-			information on the Web of Data. <strong>map4rdf</strong> is a mapping and faceted 
-			browsing tool for exploring and visualizing RDF datasets enhanced with 
-			geometrical Information.
+			Recently we have seen a large increase in the amount of geospacial
+			data that is being published using <a href="http://www.w3.org/RDF/">RDF</a>
+			and <a href="http://www.w3.org/DesignIssues/LinkedData.html">Linked
+				Data principles</a>. Efforts such as the <a
+				href="http://www.w3.org/2005/Incubator/geo/">W3C Geo XG</a>, and
+			most recently the <a
+				href="http://www.opengeospatial.org/projects/groups/geosparqlswg/">
+				GeoSPARQL</a> initiative are providing the necessary vocabularies to
+			publish this kind of information on the Web of Data. <strong>map4rdf</strong>
+			is a mapping and faceted browsing tool for exploring and visualizing
+			RDF datasets enhanced with geometrical Information.
 		</p>
 		<p>
-			<strong>map4rdf</strong> is an open source software. Just configure it to use your SPARQL 
-			endpoint and provide your users with a nice map-based visualization of your data. 
-			The geospatial aspects of the data can be modelled using either the data model from 
-			<a href="http://www.w3.org/2005/Incubator/geo/">W3C Geo XG</a> or the geometrical data model 
-			proposed by <a href="http://geo.linkeddata.es/web/guest/modelos" >GeoLinkedData</a>
-		</p> 
+			<strong>map4rdf</strong> is an open source software. Just configure
+			it to use your SPARQL endpoint and provide your users with a nice
+			map-based visualization of your data. The geospatial aspects of the
+			data can be modelled using either the data model from <a
+				href="http://www.w3.org/2005/Incubator/geo/">W3C Geo XG</a> or the
+			geometrical data model proposed by <a
+				href="http://geo.linkeddata.es/web/guest/modelos">GeoLinkedData</a>
+		</p>
+		<p>
+			<strong>map4rdf</strong> provides:
+		<ul>
+			<li>Faceted browser interface.</li>
+			<li>Geospatial and geometrical visualization using Google Maps
+				and Open Street Maps.</li>
+			<li>Visualization of geometries (LineStrings, Polygons, etc)
+				when using the GeoLinkedData data model.</li>
+			<li>Visualization of statistical data using SCOVO.</li>
+			<li>Editing and storing displayed data in RDF data format.</li>
+			<li>Query Filtering.</li>
+			<li>Easy configuration via admin panel or configuration file.</li>
+		</ul>
 	</div>
-	<div id="news_content" class="bookmark-content">
-		new content
-	</div>
+	<div id="faq_content" class="bookmark-content">faq content</div>
 	<div id="download_content" class="bookmark-content">
-		download content
+		<div id="download_content_wrapper">
+			<div id="map4rdf-war" class="small-wrapper">
+				<div class="small-div small-div-text">Download the freshest
+					stable version:</div>
+				<div class="small-div">
+					<a href="https://github.com/pejot/linked-data-visualization-tools">
+						<img src="img/map4rdfLogo.png" width="50">
+					</a>
+				</div>
+			</div>
+			<div id="visit-demo" class="small-wrapper">
+				<div class="small-div small-div-text">Visit demo:</div>
+				<div class="small-div">
+					<div class="with-border">
+						<a href="http://dbpedia.linkeddata.es/map4rdf">
+							<img src="img/demo.png" width="100">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div id="github" class="small-wrapper">
+				<div class="small-div small-div-text">Fallow us on GitHub:</div>
+				<div class="small-div">
+					<a href="https://github.com/pejot/linked-data-visualization-tools">
+						<img src="img/GitHub.png" width="100">
+					</a>
+				</div>
+			</div>
+		</div>
 	</div>
 	<div id="cofiguration_content" class="bookmark-content">
-		configuration content
+		<p>
+			The general configuration parameters of <strong>map4rdf</strong> are
+			defined within the <strong>configuration.properties</strong> file.
+			The configuration of the faceted browser is defined by the <strong>facets.ttl</strong>
+			file.
+		</p>
+		<h3 id="conf">configuration.properties</h3>
+		<p>
+			This file is located within map4rdf's webapp directory, at <strong>/WEB-INF/configuration.properties</strong>
+		</p>
+
+		<h4 id="propertiesexample">Configuration file example</h4>
+		<pre>
+endpoint.url=http://dbpedia.org/sparql
+
+geometry.model=DBPEDIA
+
+ui.google_maps_api_key=ABQIAAAAzLYqFkZVLHv0seO36vhZahTVXfBc-erLsJZtZLx-fZLjxiIMWBTUgr5s9aY_jQ5Fyqku0qQKuoGE8A
+
+facets.automactic=true
+
+edit_depth=3
+
+rdf_store_path=/home/filip/code/tmp/rdf/
+
+</pre>
+		<p>
+		<h4 id="propertiesstructure">Structure of the configuration file:</h4>
+		<strong>1. endpoint.url</strong><br> The URL of your SPARQL
+		endpoint. <br>
+		<br> <strong>2. geometry.model</strong><br> This specify the
+		data model used within your data. Two possible options:
+		<ul>
+			<li><strong>DBPEDIA</strong> : when using the data model adopted
+				by DBPEDIA. This is the data model proposed by <a
+				href="http://www.w3.org/2005/Incubator/geo/">W3C Geo XG</a>.</li>
+			<li><strong>OEG</strong> : when using the <a
+				href="http://geo.linkeddata.es/web/guest/modelos">GeoLinkedData
+					data model</a></li>
+		</ul>
+		<strong>3. ui.google_maps_api_key</strong><br> The Google Maps <a
+			href="https://developers.google.com/maps/signup">API Key</a> for your
+		website. If you are only accessing map4rdf from localhost you don't
+		need to provide a key. <br>
+		
+		<br> <strong>4. facet.automatic</strong><br> This is set
+		to <strong>true</strong> if you want map4rdf to automatically discover
+		facets on you dataset. Otherwise, this functionality can be turned off
+		by setting this property to <strong>false</strong>.<br>
+		
+		<br> <strong>5. edit_dept</strong><br> The depth of the editable tree. The value show us how deep information can 
+		be edited by user<br>
+
+		<br> <strong>5. rdf_store_path</strong><br>  
+			The path to the directory where edited files will be stored
+		<br></br>
+
+
+
+		<h3>facets.ttl</h3>
+		<p>
+			This file is writen in <a
+				href="http://www.w3.org/TeamSubmission/turtle/">turtle</a> syntaxt
+			and it is located within map4rdf's webapp directory, at <strong>/WEB-INF/facets.ttl</strong>
+		</p>
+
+		<h4 id="propertiesexample">facet.ttl file examples</h4>
+
+		<h5>FacetGroup example:</h5>
+		<pre>
+ @prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
+ @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+ @prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+ @prefix foaf: &lt;http://xmlns.com/foaf/0.1/&gt; .
+ @prefix map4rdf: &lt;http://code.google.com/p/map4rdf/wiki/ontology#&gt; .
+
+_:rdfTypeFacet 
+	a map4rdf:FacetGroup;
+	map4rdf:facetPredicate rdf:type;
+	rdfs:label "Type"@en;
+	rdfs:label "Tipo"@es;
+.
+</pre>
+
+		The example above only defines a FacetGroup for the predicate <strong>rdf:type</strong>
+		if the configuration file defines <strong>facets.automactic=true</strong>
+		this group will be poculated automatic with all the possible types for
+		geo-referenciable resources. At least one FacetGroup must be defined
+		on this file.
+
+		<h5>Manually defined facets example:</h5>
+		<pre>
+ @prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
+ @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+ @prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+ @prefix foaf: &lt;http://xmlns.com/foaf/0.1/&gt; .
+ @prefix map4rdf: &lt;http://code.google.com/p/map4rdf/wiki/ontology#&gt; .
+
+_:rdfTypeFacet 
+	a map4rdf:FacetGroup;
+	map4rdf:facetPredicate rdf:type;
+	rdfs:label "Type"@en;
+	rdfs:label "Tipo"@es;
+	map4rdf:facet &lt;http://dbpedia.org/ontology/Person&gt;;
+	map4rdf:facet &lt;http://dbpedia.org/ontology/University&gt;;
+.
+
+&lt;http://dbpedia.org/ontology/Person&gt;
+	rdfs:label "Person"@en;
+	rdfs:label "Persona"@es;
+.
+
+&lt;http://dbpedia.org/ontology/University&gt;
+	rdfs:label "University"@en;
+	rdfs:label "Universidad"@es;
+.
+</pre>
+		The example above manually defines two facets for the the FacetGroup.
+		The facet <strong>Person</strong> and the facet <strong>University</strong>.
+		When the facets are manually defined you want to turn off the
+		automatic facet detection by setting <strong>facets.automactic=false</strong>
+		in the configuration file.
 	</div>
 	<!-- end invisible  -->
-	
-	
+
+
 </body>
 </html>

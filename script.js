@@ -32,5 +32,5 @@ $(window).load(function () {
 		})
 	});
 	//site initialization
-	openBookmark("#about");
+	openBookmark("#download");
 });
