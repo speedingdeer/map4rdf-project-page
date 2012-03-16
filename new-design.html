@@ -141,6 +141,7 @@
 		</p>
 
 		<h4 id="propertiesexample">Configuration file example</h4>
+		<div class="background">
 		<pre>
 endpoint.url=http://dbpedia.org/sparql
 
@@ -155,6 +156,7 @@ edit_depth=3
 rdf_store_path=/home/filip/code/tmp/rdf/
 
 </pre>
+</div>
 		<p>
 		<h4 id="propertiesstructure">Structure of the configuration file:</h4>
 		<strong>1. endpoint.url</strong><br> The URL of your SPARQL
@@ -182,7 +184,7 @@ rdf_store_path=/home/filip/code/tmp/rdf/
 		<br> <strong>5. edit_dept</strong><br> The depth of the editable tree. The value show us how deep information can 
 		be edited by user<br>
 
-		<br> <strong>5. rdf_store_path</strong><br>  
+		<br> <strong>6. rdf_store_path</strong><br>  
 			The path to the directory where edited files will be stored
 		<br></br>
 
@@ -198,6 +200,7 @@ rdf_store_path=/home/filip/code/tmp/rdf/
 		<h4 id="propertiesexample">facet.ttl file examples</h4>
 
 		<h5>FacetGroup example:</h5>
+		<div class="background">
 		<pre>
  @prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
  @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
@@ -212,7 +215,7 @@ _:rdfTypeFacet
 	rdfs:label "Tipo"@es;
 .
 </pre>
-
+</div>
 		The example above only defines a FacetGroup for the predicate <strong>rdf:type</strong>
 		if the configuration file defines <strong>facets.automactic=true</strong>
 		this group will be poculated automatic with all the possible types for
@@ -220,6 +223,7 @@ _:rdfTypeFacet
 		on this file.
 
 		<h5>Manually defined facets example:</h5>
+		<div class="background">
 		<pre>
  @prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
  @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
@@ -245,7 +249,7 @@ _:rdfTypeFacet
 	rdfs:label "University"@en;
 	rdfs:label "Universidad"@es;
 .
-</pre>
+</div>
 		The example above manually defines two facets for the the FacetGroup.
 		The facet <strong>Person</strong> and the facet <strong>University</strong>.
 		When the facets are manually defined you want to turn off the

@@ -11,11 +11,16 @@ body {
 
 .board {		
 	border:1px solid #333;
-	
 	background-color:#F1F2F5  ;
 	margin-bottom: 10px;
 	padding-left: 5px;
 	padding-left: 5px;
+}
+
+.background {
+	border:1px solid #333;
+	background-color:#F1F2F5  ;
+	padding: 3px;
 }
 
 #header {
@@ -101,7 +106,7 @@ li {
 .small-div {
 	float: left;
 	padding-left:10px;
-	height: 60px;
+	height: 100px;
 }
 
 .small-div-text {
