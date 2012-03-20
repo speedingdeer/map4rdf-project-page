@@ -102,7 +102,10 @@ li {
  	clear: both;
  	padding-bottom: 15px;
  	padding-top: 10px;
+ 	margin-left:-5px;
+ 	padding-left:0px;
  	height: 50px;
+ 	width: 996px;
  	}
 
 .small-div {
