@@ -102,13 +102,23 @@ li {
  	clear: both;
  	padding-bottom: 15px;
  	padding-top: 10px;
-}
+ 	height: 50px;
+ 	}
+
 .small-div {
 	float: left;
 	padding-left:10px;
 	height: 100px;
+	position: relative;
+}
+.relative-minus {
+	position: relative;
+	top: -5px;
 }
 
+.margin-plus {
+	margin-top: 20px;
+}
 .small-div-text {
 	position: relative;
 	top: 20px;
