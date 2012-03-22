@@ -96,7 +96,44 @@
 			<li>Easy configuration via admin panel or configuration file.</li>
 		</ul>
 	</div>
-	<div id="faq_content" class="bookmark-content">faq content</div>
+	<div id="faq_content" class="bookmark-content">
+		<h3>Initial Display</h3>
+		<p>Once you have installed map4rdf, you can see the initial display</p>
+		<img src="img/mainSC.png" width="800"/>
+
+		<h3>Switching layers</h3>
+		<p>Click on the plus sign on the right side of the map.</p>
+		<img src="img/switchlayersplus.png" />
+		<p>The application will show the available layers you have. Select one of them.</p>
+		<img src="img/switchlayers.png" />
+
+
+		<h3>Selecting Facets</h3>
+		<p>Select a particular facet</p>
+		<img src="img/selectingFacets.png" />
+		<p>The application will show only the resources of the facet selected</p>
+		<img src="img/displayingResourcesOfFacet.png" />
+
+		
+		
+		<h3>Filtering</h3>
+		<p>This is a new feature of map4rdf. It allows us to filter the resources to visualize.</p>
+		<img src="img/showFilterOption.png" />
+		
+		<p>Click on the pencil icon to turn on the drawing mode.</p>
+		<img src="img/drawing-mode-on.png" />
+
+		<p>Select the area of the map you want to see resources</p>
+		<img src="img/showingFilteredResources.png" />
+
+		<p>If you want to remove the filter click on remove filter button.</p>
+		<img src="img/showWithOutFilterButton.png" />
+
+		<p>Finally click on the pencil icon to turn off the drawing mode.</p>
+		<img src="img/drawing-mode-off.png" />
+
+		
+	</div>
 	<div id="download_content" class="bookmark-content">
 		<div id="download_content_wrapper">
 			<div id="map4rdf-war" class="small-wrapper background margin-plus">
@@ -153,7 +190,7 @@ facets.automactic=true
 
 edit_depth=3
 
-rdf_store_path=/home/filip/code/tmp/rdf/
+rdf_store_path=/home/user/code/tmp/rdf/
 
 </pre>
 </div>
@@ -249,6 +286,7 @@ _:rdfTypeFacet
 	rdfs:label "University"@en;
 	rdfs:label "Universidad"@es;
 .
+	</pre>
 </div>
 		The example above manually defines two facets for the the FacetGroup.
 		The facet <strong>Person</strong> and the facet <strong>University</strong>.
