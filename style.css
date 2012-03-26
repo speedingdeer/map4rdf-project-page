@@ -63,6 +63,7 @@ h3 {
 
 #faq {
 	border-left: none;	
+	width: 244px;
 }
 
 #about {
@@ -117,6 +118,7 @@ li {
  	padding-left:0px;
  	margin-bottom:15px;
  	height: 50px;
+ 	width: 995px;
  	}
 
 .small-div {
