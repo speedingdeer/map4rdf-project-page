@@ -3,6 +3,10 @@ body {
 	font-family: sans-serif;
 }
 
+h3 {
+	clear: both;
+}
+
 #main-container {
 	width:1000px;
 	margin:0px auto;
@@ -21,6 +25,9 @@ body {
 	border:1px solid #333;
 	background-color:#F1F2F5  ;
 	padding: 3px;
+	padding-left 0;
+	padding-right 0;
+	width: 100%;
 }
 
 #header {
@@ -52,6 +59,10 @@ body {
 #configuration {
 	border-right: none;
 	width: 244px;
+}
+
+#faq {
+	border-left: none;	
 }
 
 #about {
@@ -104,8 +115,8 @@ li {
  	padding-top: 10px;
  	margin-left:-5px;
  	padding-left:0px;
+ 	margin-bottom:15px;
  	height: 50px;
- 	width: 996px;
  	}
 
 .small-div {
@@ -116,7 +127,7 @@ li {
 }
 .relative-minus {
 	position: relative;
-	top: -5px;
+	top: -3px;
 }
 
 .margin-plus {
@@ -124,7 +135,9 @@ li {
 }
 .small-div-text {
 	position: relative;
-	top: 20px;
+	vertical-align:middle;
+	height: 100%;
+
 }
 
 .with-border {
